@@ -67,10 +67,17 @@ header {
 .h2{
 	margin-top:20px;
 	margin-bottom:20px;
-	font-size:20px;
+	font-size:30px;
 	text-align:center;
+	font-weight: bold;
 }
 
+.h3{
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:10px;
+	text-align:center;
+}
 
 article{
 	width:470px;
