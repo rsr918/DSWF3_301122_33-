@@ -1,12 +1,11 @@
 @font-face{
-	font-family:angsa;	
+	font-family:"Angsa New";	
 	src:url(fonts/angsa.ttf);
 }
 
-
 body {
 	margin:0;
-	font-family:angsa;
+	font-family:"Angsa New", sans-serif;
 	
 }
 header {
