@@ -11,6 +11,8 @@ body {
 }
 header {
 	width:100%;
+	position: relative;
+	z-index: 10001;
 }
 
 #contenedor{
@@ -25,7 +27,7 @@ header {
 	
 }
 .logo{
-	width:350px;
+	width:300px;
 	margin: auto;
 }
 
@@ -35,9 +37,7 @@ header {
 	padding: 10px;
 }
 #social {
-    width: 20%;
-    margin: 0px !important;
-    float: right;
+    overflow-x: scroll;
 }
 
 #contenido{
@@ -118,18 +118,23 @@ object{
 		
 }
 header label {
-	
-	display:none;
-	width:30px;
-	height:30px;
-	padding:10px;
-	border-right:1px solid #fff;
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-right: 1px solid #fff;
 }
 header label:hover {
 	cursor: pointer;
 	background:rgba(0,0,0,0.3);
 	
 	
+}
+
+.menu_sub {
+    background-color: #004669;
+    color: #fff;
+    min-height: 38px;
 }
 
 .menu  {
@@ -172,7 +177,7 @@ header label:hover {
 .menu ul ul{
 	position:absolute;
 	flex-direction:column;
-	top: 192px;
+	top: 162px;
 }
 .menu li li{
 	background:#004669;
@@ -180,7 +185,6 @@ header label:hover {
 	overflow:hidden;
 	transition:all .5s;		
 }
-
 
 .menu li:hover li{
 	max-height:500px;
@@ -248,7 +252,7 @@ footer{
 }
 
 
-@media (max-width:768px){
+@media (max-width:750px){
 	
 	header label{
 		display:block;
@@ -272,7 +276,7 @@ footer{
 	.menu ul ul{
 		left:100%;
 		position:absolute;
-		margin-top:-55%;
+		margin-top:-100px;
 	}
 	.menu li li{
 		border-bottom: 0px solid #fff;
@@ -307,19 +311,18 @@ footer{
 		margin: 10px !important;
 		float: none;
 	}
+	.caja2 {
+		font-size: 16px !important;
+	}
 }
 
 
 /* STYLES TITULO SITIO */
-.logo{
-	float: left;
-}
-
 .caja0 {
     float: right;
     height: 100px;
     text-align: right;
-    width: 710px;
+    width: 100%;
 	padding-right: 20px;
 	margin: auto;
 }
